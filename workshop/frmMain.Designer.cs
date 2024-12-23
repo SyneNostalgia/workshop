@@ -33,6 +33,7 @@
             workshop1ToolStripMenuItem = new ToolStripMenuItem();
             workshop3ToolStripMenuItem = new ToolStripMenuItem();
             workshop4ToolStripMenuItem = new ToolStripMenuItem();
+            workshop6ToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -48,7 +49,7 @@
             // 
             // workshopToolStripMenuItem
             // 
-            workshopToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { workshop1ToolStripMenuItem, workshop3ToolStripMenuItem, workshop4ToolStripMenuItem });
+            workshopToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { workshop1ToolStripMenuItem, workshop3ToolStripMenuItem, workshop4ToolStripMenuItem, workshop6ToolStripMenuItem });
             workshopToolStripMenuItem.Name = "workshopToolStripMenuItem";
             workshopToolStripMenuItem.Size = new Size(89, 24);
             workshopToolStripMenuItem.Text = "Workshop";
@@ -71,8 +72,15 @@
             // 
             workshop4ToolStripMenuItem.Name = "workshop4ToolStripMenuItem";
             workshop4ToolStripMenuItem.Size = new Size(224, 26);
-            workshop4ToolStripMenuItem.Text = "Workshop4";
+            workshop4ToolStripMenuItem.Text = "Workshop4-5";
             workshop4ToolStripMenuItem.Click += workshop4ToolStripMenuItem_Click;
+            // 
+            // workshop6ToolStripMenuItem
+            // 
+            workshop6ToolStripMenuItem.Name = "workshop6ToolStripMenuItem";
+            workshop6ToolStripMenuItem.Size = new Size(224, 26);
+            workshop6ToolStripMenuItem.Text = "Workshop6";
+            workshop6ToolStripMenuItem.Click += workshop6ToolStripMenuItem_Click;
             // 
             // frmMain
             // 
@@ -98,5 +106,6 @@
         private ToolStripMenuItem workshop1ToolStripMenuItem;
         private ToolStripMenuItem workshop3ToolStripMenuItem;
         private ToolStripMenuItem workshop4ToolStripMenuItem;
+        private ToolStripMenuItem workshop6ToolStripMenuItem;
     }
 }

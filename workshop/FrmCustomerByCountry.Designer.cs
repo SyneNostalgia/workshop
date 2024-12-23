@@ -44,7 +44,6 @@
             dvgResult.RowHeadersWidth = 51;
             dvgResult.Size = new Size(776, 392);
             dvgResult.TabIndex = 0;
-            dvgResult.Visible = false;
             // 
             // cboCountry
             // 

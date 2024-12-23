@@ -41,6 +41,7 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(244, 28);
             comboBox1.TabIndex = 0;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // label1
             // 
@@ -72,6 +73,8 @@
             Controls.Add(comboBox1);
             Name = "work6";
             Text = "work6";
+            WindowState = FormWindowState.Maximized;
+            Load += work6_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();

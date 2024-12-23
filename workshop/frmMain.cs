@@ -37,5 +37,12 @@ namespace workshop
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void workshop6ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            work6 frm = new work6();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }
