@@ -38,8 +38,8 @@ namespace workshop
             dt.Rows.InsertAt(row, 0);
 
             comboBox1.DataSource = dt;
-            comboBox1.ValueMember = "CategoryName";
-            comboBox1.DisplayMember = "CategoryID";
+            comboBox1.ValueMember = "CategoryID";
+            comboBox1.DisplayMember = "CategoryName";
 
             conn.Close();
         }
@@ -81,7 +81,7 @@ namespace workshop
             }
             else
             {
-                int cid = comboBox1.SelectedIndex;
+                int cid = Convert.ToInt32(comboBox1.SelectedValue);
                 showProduct(cid);
             }
         }
