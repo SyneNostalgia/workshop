@@ -10,7 +10,7 @@ namespace workshop
             public static SqlConnection connectNorthwind()
             {
                 string server = "DESKTOP-63NPO94\\SQLEXPRESS";
-                string db = "Northwind";
+                string db = "JEEHAN";
                 string strCon = string.Format(@"Data Source={0}; Initial catalog={1};
             Integrated Security=True; Encrypt=False;", server, db);
                 SqlConnection conn = new SqlConnection(strCon);

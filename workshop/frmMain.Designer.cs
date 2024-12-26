@@ -34,6 +34,7 @@
             workshop3ToolStripMenuItem = new ToolStripMenuItem();
             workshop4ToolStripMenuItem = new ToolStripMenuItem();
             workshop6ToolStripMenuItem = new ToolStripMenuItem();
+            jihanToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -49,7 +50,7 @@
             // 
             // workshopToolStripMenuItem
             // 
-            workshopToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { workshop1ToolStripMenuItem, workshop3ToolStripMenuItem, workshop4ToolStripMenuItem, workshop6ToolStripMenuItem });
+            workshopToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { workshop1ToolStripMenuItem, workshop3ToolStripMenuItem, workshop4ToolStripMenuItem, workshop6ToolStripMenuItem, jihanToolStripMenuItem });
             workshopToolStripMenuItem.Name = "workshopToolStripMenuItem";
             workshopToolStripMenuItem.Size = new Size(89, 24);
             workshopToolStripMenuItem.Text = "Workshop";
@@ -82,6 +83,13 @@
             workshop6ToolStripMenuItem.Text = "Workshop6";
             workshop6ToolStripMenuItem.Click += workshop6ToolStripMenuItem_Click;
             // 
+            // jihanToolStripMenuItem
+            // 
+            jihanToolStripMenuItem.Name = "jihanToolStripMenuItem";
+            jihanToolStripMenuItem.Size = new Size(224, 26);
+            jihanToolStripMenuItem.Text = "Jihan";
+            jihanToolStripMenuItem.Click += jihanToolStripMenuItem_Click;
+            // 
             // frmMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -107,5 +115,6 @@
         private ToolStripMenuItem workshop3ToolStripMenuItem;
         private ToolStripMenuItem workshop4ToolStripMenuItem;
         private ToolStripMenuItem workshop6ToolStripMenuItem;
+        private ToolStripMenuItem jihanToolStripMenuItem;
     }
 }

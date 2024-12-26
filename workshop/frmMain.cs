@@ -44,5 +44,12 @@ namespace workshop
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void jihanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmManageProduct frm = new frmManageProduct();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }
