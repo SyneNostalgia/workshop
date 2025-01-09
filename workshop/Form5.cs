@@ -26,7 +26,7 @@ namespace workshop
         public void showOrder()
         {
             SqlConnection conn = DBConnect.connectNorthwind();
-            string sql = "Select * From Order_View" ;
+            string sql = "Select * From Order_View";
 
             SqlDataAdapter da = new SqlDataAdapter(sql, conn);
             DataTable dt = new DataTable();
@@ -38,7 +38,7 @@ namespace workshop
         public void showOrderDetail(int orderID)
         {
             SqlConnection conn = DBConnect.connectNorthwind();
-            string sqlDetail = String.Format("SELECT OD.OrderID, OD.ProductID, P.ProductName, C.CategoryName, OD.UnitPrice, OD.Quantity, (OD.UnitPrice * OD.Quantity) AS Sumprice, OD.Discount, (OD.UnitPrice * OD.Quantity * OD.Discount) AS DiscountPrice, (OD.UnitPrice * OD.Quantity) - (OD.UnitPrice * OD.Quantity * OD.Discount) AS NetPrice FROM [Order Details] AS OD inner join Products AS P ON OD.ProductID = P.ProductID inner join Categories As C ON P.CategoryID = C.CategoryID WHERE OrderID = {0};", orderID);
+            string sqlDetail = String.Format("Select * From OrderDetailVeiw WHERE OrderID = {0};", orderID);
 
             SqlDataAdapter da = new SqlDataAdapter(sqlDetail, conn);
             DataTable dt = new DataTable();

@@ -38,6 +38,9 @@
             // 
             // dgvOrder
             // 
+            dgvOrder.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dgvOrder.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvOrder.BackgroundColor = SystemColors.ControlLightLight;
             dgvOrder.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvOrder.Location = new Point(12, 32);
             dgvOrder.Name = "dgvOrder";
@@ -50,7 +53,9 @@
             // 
             // dgvDetail
             // 
+            dgvDetail.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dgvDetail.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvDetail.BackgroundColor = SystemColors.ControlLightLight;
             dgvDetail.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvDetail.Location = new Point(12, 349);
             dgvDetail.Name = "dgvDetail";
@@ -83,6 +88,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.MistyRose;
             ClientSize = new Size(1051, 591);
             Controls.Add(label2);
             Controls.Add(label1);

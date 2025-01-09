@@ -43,6 +43,7 @@
             // 
             // label2
             // 
+            label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label2.AutoSize = true;
             label2.Location = new Point(12, 306);
             label2.Name = "label2";
@@ -52,6 +53,7 @@
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label1.AutoSize = true;
             label1.Location = new Point(12, 44);
             label1.Name = "label1";
@@ -61,21 +63,28 @@
             // 
             // dgvDetail
             // 
+            dgvDetail.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dgvDetail.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvDetail.BackgroundColor = SystemColors.ControlLightLight;
             dgvDetail.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvDetail.Location = new Point(12, 329);
             dgvDetail.Name = "dgvDetail";
             dgvDetail.RowHeadersWidth = 51;
-            dgvDetail.Size = new Size(776, 144);
+            dgvDetail.Size = new Size(816, 144);
             dgvDetail.TabIndex = 5;
             // 
             // dgvOrder
             // 
+            dgvOrder.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dgvOrder.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvOrder.BackgroundColor = SystemColors.ControlLightLight;
             dgvOrder.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvOrder.Location = new Point(12, 67);
             dgvOrder.Name = "dgvOrder";
             dgvOrder.RowHeadersWidth = 51;
-            dgvOrder.Size = new Size(776, 236);
+            dgvOrder.Size = new Size(816, 236);
             dgvOrder.TabIndex = 4;
+            dgvOrder.CellMouseClick += dgvOrder_CellMouseClick;
             // 
             // btnShow
             // 
@@ -85,6 +94,7 @@
             btnShow.TabIndex = 8;
             btnShow.Text = "แสดงข้อมูล";
             btnShow.UseVisualStyleBackColor = true;
+            btnShow.Click += btnShow_Click;
             // 
             // cboEmployee
             // 
@@ -125,7 +135,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(799, 483);
+            BackColor = Color.MistyRose;
+            ClientSize = new Size(839, 483);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(cboCountry);
@@ -138,6 +149,7 @@
             Name = "Form6";
             Text = "Form6";
             WindowState = FormWindowState.Maximized;
+            Load += Form6_Load;
             ((System.ComponentModel.ISupportInitialize)dgvDetail).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvOrder).EndInit();
             ResumeLayout(false);
