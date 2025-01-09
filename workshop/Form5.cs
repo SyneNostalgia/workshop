@@ -26,7 +26,7 @@ namespace workshop
         public void showOrder()
         {
             SqlConnection conn = DBConnect.connectNorthwind();
-            string sql = "SELECT * FROM Orders";
+            string sql = "Select * From Order_View";
 
             SqlDataAdapter da = new SqlDataAdapter(sql, conn);
             DataTable dt = new DataTable();
