@@ -35,6 +35,8 @@
             workshop4ToolStripMenuItem = new ToolStripMenuItem();
             workshop6ToolStripMenuItem = new ToolStripMenuItem();
             jihanToolStripMenuItem = new ToolStripMenuItem();
+            from5ToolStripMenuItem = new ToolStripMenuItem();
+            from6ToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -50,7 +52,7 @@
             // 
             // workshopToolStripMenuItem
             // 
-            workshopToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { workshop1ToolStripMenuItem, workshop3ToolStripMenuItem, workshop4ToolStripMenuItem, workshop6ToolStripMenuItem, jihanToolStripMenuItem });
+            workshopToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { workshop1ToolStripMenuItem, workshop3ToolStripMenuItem, workshop4ToolStripMenuItem, workshop6ToolStripMenuItem, jihanToolStripMenuItem, from5ToolStripMenuItem, from6ToolStripMenuItem });
             workshopToolStripMenuItem.Name = "workshopToolStripMenuItem";
             workshopToolStripMenuItem.Size = new Size(89, 24);
             workshopToolStripMenuItem.Text = "Workshop";
@@ -90,6 +92,20 @@
             jihanToolStripMenuItem.Text = "Jihan";
             jihanToolStripMenuItem.Click += jihanToolStripMenuItem_Click;
             // 
+            // from5ToolStripMenuItem
+            // 
+            from5ToolStripMenuItem.Name = "from5ToolStripMenuItem";
+            from5ToolStripMenuItem.Size = new Size(224, 26);
+            from5ToolStripMenuItem.Text = "From5";
+            from5ToolStripMenuItem.Click += from5ToolStripMenuItem_Click;
+            // 
+            // from6ToolStripMenuItem
+            // 
+            from6ToolStripMenuItem.Name = "from6ToolStripMenuItem";
+            from6ToolStripMenuItem.Size = new Size(224, 26);
+            from6ToolStripMenuItem.Text = "From6";
+            from6ToolStripMenuItem.Click += from6ToolStripMenuItem_Click;
+            // 
             // frmMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -116,5 +132,7 @@
         private ToolStripMenuItem workshop4ToolStripMenuItem;
         private ToolStripMenuItem workshop6ToolStripMenuItem;
         private ToolStripMenuItem jihanToolStripMenuItem;
+        private ToolStripMenuItem from5ToolStripMenuItem;
+        private ToolStripMenuItem from6ToolStripMenuItem;
     }
 }

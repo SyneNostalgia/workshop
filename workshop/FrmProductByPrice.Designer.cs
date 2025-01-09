@@ -105,6 +105,7 @@
             Name = "Form2";
             Text = "Form2";
             WindowState = FormWindowState.Maximized;
+            Load += Form2_Load;
             ((System.ComponentModel.ISupportInitialize)dgvResult).EndInit();
             ResumeLayout(false);
             PerformLayout();

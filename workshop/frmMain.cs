@@ -51,5 +51,19 @@ namespace workshop
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void from5ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form5 frm = new Form5();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void from6ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form6 frm = new Form6();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

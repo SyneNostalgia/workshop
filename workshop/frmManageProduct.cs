@@ -133,7 +133,7 @@ namespace workshop
         private void DeleteProduct(int p_id)
         {
             SqlConnection conn = DBConnect.connectNorthwind();
-            string sql = String.Format("Delete From Products Where productID = {0}",p_id);
+            string sql = String.Format("Delete From Products Where productID = {0}", p_id);
             SqlCommand com = new SqlCommand(sql, conn);
             com.CommandType = CommandType.Text;
             com.ExecuteNonQuery();
@@ -146,7 +146,7 @@ namespace workshop
             {
                 return;
             }
-            if (MessageBox.Show("คุณต้องการลบรายการสินค้านี้หรือไม่" , "ยืนยันการทำงาน", MessageBoxButtons.YesNo) == DialogResult.No)
+            if (MessageBox.Show("คุณต้องการลบรายการสินค้านี้หรือไม่", "ยืนยันการทำงาน", MessageBoxButtons.YesNo) == DialogResult.No)
             {
                 return;
             }
@@ -154,6 +154,11 @@ namespace workshop
             DeleteProduct(p_id);
             ShowProducts();
             ClearForm();
+        }
+
+        private void dgvResult_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

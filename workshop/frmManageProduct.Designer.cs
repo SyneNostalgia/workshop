@@ -179,6 +179,7 @@
             dgvResult.RowHeadersWidth = 51;
             dgvResult.Size = new Size(454, 426);
             dgvResult.TabIndex = 15;
+            dgvResult.CellContentClick += dgvResult_CellContentClick;
             dgvResult.CellMouseDoubleClick += dgvResult_CellMouseDoubleClick;
             // 
             // frmManageProduct

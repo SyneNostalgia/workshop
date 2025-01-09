@@ -29,7 +29,7 @@ namespace workshop
             SqlConnection conn = DBConnect.connectNorthwind();
             string startPrice = txtStart.Text;
             string endPrice = txtEnd.Text;
-            string query = string.Format("Select * From Products Where UnitPrice Between {0} And {1}",startPrice ,endPrice);
+            string query = string.Format("Select * From Products Where UnitPrice Between {0} And {1}", startPrice, endPrice);
             SqlDataAdapter da = new SqlDataAdapter(query, conn);
 
             DataTable dt = new DataTable();
@@ -40,6 +40,11 @@ namespace workshop
         }
 
         private void dgvResult_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
         {
 
         }
